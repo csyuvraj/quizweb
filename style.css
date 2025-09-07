@@ -1,0 +1,98 @@
+/* A few basic styles for the whole page */
+body {
+    font-family: sans-serif;
+    background-color: #e6eef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* The main container that holds everything */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 550px;
+    text-align: center;
+}
+
+/* A class to hide screens we're not using */
+.hidden {
+    display: none;
+}
+
+/* Styles for the question and buttons */
+#question-box h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    text-align: left;
+}
+
+.answer-button:hover {
+    background-color: #d0d0d0;
+}
+
+/* Styles for the main action buttons */
+.button {
+    background-color: #4CAF50; /* A friendly green color */
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* A style for when an answer is chosen */
+.selected {
+    background-color: #2196F3; /* A nice blue */
+    color: white;
+}
+
+/* Styles for the results list */
+#answers-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#answers-list li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.correct {
+    color: #4CAF50;
+}
+
+.incorrect {
+    color: #f44336;
+}
