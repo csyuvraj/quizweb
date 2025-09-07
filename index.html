@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- This is the welcome screen when the app first loads -->
+        <div id="welcome-screen" class="screen">
+            <h1>Ready for a Quiz?</h1>
+            <p>This is a fun quiz to test your knowledge. Click the button to get started!</p>
+            <button id="start-button" class="button">Start Quiz</button>
+        </div>
+
+        <!-- This is the screen that shows the questions and answers -->
+        <div id="quiz-screen" class="screen hidden">
+            <div id="question-box">
+                <!-- The question text will appear here -->
+                <h2 id="question-text">Question goes here.</h2>
+            </div>
+            
+            <div id="answers-container">
+                <!-- Buttons for the answer options will be placed here -->
+            </div>
+            
+            <button id="next-button" class="button hidden">Next Question</button>
+        </div>
+
+        <!-- This is the screen that shows your final score -->
+        <div id="results-screen" class="screen hidden">
+            <h1>Quiz Complete!</h1>
+            <p id="score-text">You scored 0 out of 5.</p>
+            <ul id="answers-list">
+                <!-- A list of your answers and the correct answers will show up here -->
+            </ul>
+            <button id="restart-button" class="button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
